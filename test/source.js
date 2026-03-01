@@ -1,7 +1,6 @@
 //link to the API
 
-const BASE = "https://restcountries.com/v3.1";
-const URL_ALL = `${BASE}/all`;
+const BASE_URL = "https://restcountries.com/v3.1";
 
 
 
@@ -22,4 +21,4 @@ async function fetchData(url) {
     return response.json();
   }
 
-  module.exports = { fetchData, URL_ALL };
+  module.exports = { fetchData, BASE_URL };

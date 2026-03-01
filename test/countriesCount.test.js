@@ -1,4 +1,4 @@
-const { fetchData, URL_ALL } = require("./source");
+const { fetchData, BASE_URL } = require("./source");
 
 
 
@@ -9,7 +9,7 @@ const { fetchData, URL_ALL } = require("./source");
 describe("Scenario 1: Confirmation on Number of Countries", () => {
     test("Verify the total number of countries", async () => {
         //fetch data
-        const url = `${URL_ALL}?fields=name`;
+        const url = `${BASE_URL}/all?fields=name`;
         const countries = await fetchData(url);    
 
         //Based on ISO 3166
