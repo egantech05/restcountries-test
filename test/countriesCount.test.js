@@ -9,7 +9,7 @@ const { fetchData, BASE_URL } = require("./source");
 describe("Scenario 1: Confirmation on Number of Countries", () => {
     test("Verify the total number of countries", async () => {
         //fetch data
-        const url = `${BASE_URL}/all?fields=name`;
+        const url = `${BASE_URL}?fields=name`;
         const countries = await fetchData(url);    
 
         //Based on ISO 3166
@@ -17,8 +17,8 @@ describe("Scenario 1: Confirmation on Number of Countries", () => {
 
         // count from API
         const actualCount = countries.length;
+
         // message when test fail
-        console.log(`[Scenario 1] Country records returned: ${actualCount} (expected ${expectedCount})`);
         if (actualCount !== expectedCount) {
             throw new Error(`Test fail. Expected ${expectedCount}, Actual ${actualCount}`);
           }
