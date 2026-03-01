@@ -16,8 +16,14 @@ describe("Scenario 2: Validate SASL", () => {
         //expected results
         const expectedResults = "sasl";
 
-        // message when test pass
-        if (!Object.prototype.hasOwnProperty.call(saLang, expectedResults)) {
+
+        if (Object.prototype.hasOwnProperty.call(saLang, expectedResults)) {
+
+            // message when test pass
+            console.log(`SASL is part of South Africa languages.`);
+        }
+        else {
+            // message when test fail
             throw new Error(`SASL not found in South Africa languages`);
         }
 
