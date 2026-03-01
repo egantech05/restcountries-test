@@ -1,7 +1,7 @@
 //link to the API
 
 const BASE = "https://restcountries.com/v3.1";
-const URL_ALL = `${BASE}/all?fields=name`;
+const URL_ALL = `${BASE}/all`;
 
 
 
