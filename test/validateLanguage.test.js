@@ -1,4 +1,4 @@
-const { fetchData, BASE_URL } = require("./source");
+const { fetchData, BASE_URL } = require("../api/restCountries");
 
 //validate if SASL is the officially recognized as one of South Africa's official language
 
