@@ -4,8 +4,8 @@
 
 The repo consist of two parts:
 
-1. Test Automation (Jest)
-2. Console Application Development (Call Routing Helper)
+1. Test Automation
+2. Console Application Development (Call Router)
 
 The project uses the REST Countries API as the data source.
 
