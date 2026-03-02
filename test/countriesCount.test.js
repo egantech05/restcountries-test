@@ -1,4 +1,4 @@
-const { fetchData, BASE_URL } = require("./source");
+const { fetchData, BASE_URL } = require("../api/restCountries");
 
 //verify if country count is exactly the same amount as per ISO 3166 (249 countries)
 describe("Scenario 1: Confirmation on Number of Countries", () => {

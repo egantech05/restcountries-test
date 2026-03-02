@@ -1,4 +1,4 @@
-const { fetchData, BASE_URL } = require("./source");
+const { fetchData, BASE_URL } = require("../api/restCountries");
 
 describe("Scenario 3: Max Request Field", () => {
     test("More than 10 fields requested should be rejected", async () => {
