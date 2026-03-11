@@ -58,7 +58,7 @@ async function main() {
     
         const sameLang = await sameLanguage(confirmedCountry);
         console.log("Countries with a common language:", sameLang);
-        /*
+        
         console.log(" ");
         // check for country that has common language and still in working hour
         // display local time for each country to confirm it is still in working hour
@@ -72,7 +72,7 @@ async function main() {
               console.log(`${c.cca2}: ${c.time}`);
             }
           }
-        */
+        
 
         console.log(" ");
         console.log("-------------------------------------------------------");
