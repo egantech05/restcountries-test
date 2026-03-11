@@ -51,7 +51,7 @@ describe("Scenario 3: Max Request Field", () => {
               }
         };
 
-        onsole.log("PASS: All requests from 1 to 10 number of fields returned response ok");
+        console.log("PASS: All requests from 1 to 10 number of fields returned response ok");
 
   });
 });
